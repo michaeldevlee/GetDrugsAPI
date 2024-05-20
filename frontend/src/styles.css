@@ -1,0 +1,16 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 46%, rgba(16,21,112,1) 100%);
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    color: yellow
+}

@@ -1,0 +1,7 @@
+<section  class="main-body">
+    <app-drug-form (onSubmitted)="onReceivedResponses($event)" [formData]="data" class="half-main-body"></app-drug-form>
+    <app-results [formResponses]="formResponses"  class="results "></app-results>
+</section>
+<section class="logo-page">
+    <app-logopage></app-logopage>
+</section>

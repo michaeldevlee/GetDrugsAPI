@@ -1,0 +1,22 @@
+
+<form class="drug-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <section class="drug-form-input">
+        <p>Mechanism of Action</p>
+        <input formControlName="moa" type="text">
+    </section>
+    <section class="drug-form-input">
+        <p>Generic Name</p>
+        <input formControlName="generic_name" type="text">
+    </section>
+    <section class="drug-form-input">
+        <p>Brand Name</p>
+        <input formControlName="brand_name" type="text">
+    </section>
+    <section class="drug-form-input">
+        <input class="submit-button" type="submit">
+    </section>
+</form>
+
+<li *ngFor="let d of formData">
+    {{ d }}
+  </li>

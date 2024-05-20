@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  # Spring Boot Demo API
+  thedrugapi:
+    image: mikelee531/thedrugapi:v1
+    networks:
+      - drugnet
+    ports:
+      - '8080:8080'
+
+networks:
+  drugnet:
+    driver: bridge
