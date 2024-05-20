@@ -71,4 +71,4 @@ networks:
 - Event Binding: Implemented event binding to handle user interactions and dynamically update the UI.
 
 ## Live Site
-A [demo](http://druglookup.crabdance.com/) is available in production.
+A [demo](http://druglookup.crabdance.com/) is available in production. (Note: The site has been tested on Firefox currently. Chrome does not allow unsecured API calls and will not work unless an SSL certificate is installed.)  
