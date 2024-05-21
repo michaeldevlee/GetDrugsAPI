@@ -49,7 +49,6 @@ networks:
 ```
 
 
-## Local Setup
 1. Change directories to the `backend` folder and run `mvn clean install` to produce the `.jar` file to be run in the docker container
 2. Change directories back to the root of the project and run `docker compose -f docker-compose-local.yaml up -d` to create the containers
 3. Open your browser and navigate to http://localhost to use the application.
