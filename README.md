@@ -70,7 +70,7 @@ networks:
 - Event Binding: Implemented event binding to handle user interactions and dynamically update the UI.
 
 ## Live Site
-This demo can be viewed in production [here](druglookup.netlify.app). The frontend is hosted on Netlify while the backend is in a OCI compute instance docker container behind an NGINX reverse proxy. 
+This demo can be viewed in production [here](https://druglookup.netlify.app). The frontend is hosted on Netlify while the backend is in a OCI compute instance docker container behind an NGINX reverse proxy. 
 
 ### Examples
 ![image](https://github.com/michaeldevlee/GetDrugsAPI/assets/58196525/6221fafe-4362-4d2e-8d0b-c85e81eb057f)
