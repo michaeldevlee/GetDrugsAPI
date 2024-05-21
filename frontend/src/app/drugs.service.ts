@@ -1,6 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, isDevMode } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment as dev } from '../environments/environment.development';
+import { environment as prod } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +16,7 @@ export class DrugsService {
   drugList = [];
   
   getDrugs(moa : string, generic_name : string, brand_name :string): Observable<any>{
-    const url : string = "https://152.67.235.143.nip.io/thedrugapi";
+    const url : string = isDevMode ? dev.apiUrl : prod.apiUrl;
     let searchParams = new HttpParams();
 
     if (moa != ""){
