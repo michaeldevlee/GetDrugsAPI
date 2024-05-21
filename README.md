@@ -18,7 +18,7 @@ The openFDA API provides endpoints to retrieve useful drug data however, the res
 
 ## Local Setup and Installation
 
-The application utilizes docker to setup the environment as seen in the `docker-compose-x86.yaml`
+The application utilizes docker to setup the environment as seen in the `docker-compose-local.yaml`
 
 ```
 version: '3.8'
