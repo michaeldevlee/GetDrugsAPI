@@ -14,7 +14,7 @@ export class DrugsService {
   drugList = [];
   
   getDrugs(moa : string, generic_name : string, brand_name :string): Observable<any>{
-    const url : string = "http://druglookup.crabdance.com/drug";
+    const url : string = "https://152.67.235.143.nip.io/thedrugapi";
     let searchParams = new HttpParams();
 
     if (moa != ""){
