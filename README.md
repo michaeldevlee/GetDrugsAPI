@@ -3,7 +3,7 @@
 druglookup is a web application built to transform data from the openFDA API to make it easier to consume on the frontend.
 
 ## Introduction
-The openFDA API provides endpoints to retrieve useful drug data however, the responses can be very large and have nested fields. The primary goal was to create a full-stack application to provide a more flat response for easier usability.
+The openFDA API provides endpoints to retrieve useful drug data however, the responses can be very large and have nested fields. The primary goal of this project was to demonstrate the simplification through a full-stack application that pulls in the transformed data.
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@ The openFDA API provides endpoints to retrieve useful drug data however, the res
 - Retrieve and transform data from the openFDA API.
 - Display the data in a user-friendly format on the frontend.
 
-## Setup and Installation
+## Local Setup and Installation
 
 The application utilizes docker to setup the environment as seen in the `docker-compose-x86.yaml`
 
@@ -51,7 +51,7 @@ networks:
 
 ## Local Setup
 1. Change directories to the `backend` folder and run `mvn clean install` to produce the `.jar` file to be run in the docker container
-2. Change directories back to the root of the project and run `docker compose -f docker-compose-x86.yaml up -d` to create the containers
+2. Change directories back to the root of the project and run `docker compose -f docker-compose-local.yaml up -d` to create the containers
 3. Open your browser and navigate to http://localhost to use the application.
 4. Type in the appropriate search fields and press `Submit Query` to get the transformed data
 
@@ -70,7 +70,7 @@ networks:
 
 - Event Binding: Implemented event binding to handle user interactions and dynamically update the UI.
 
-### Live Site
+## Live Site
 This demo can be viewed in production [here](druglookup.netlify.app). The frontend is hosted on Netlify while the backend is in a OCI compute instance docker container behind an NGINX reverse proxy. 
 
 ### Examples
