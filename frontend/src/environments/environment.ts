@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiURL: "$PROD_URL"
+    apiURL: "https://192.9.156.241.nip.io/thedrugapi"
 };

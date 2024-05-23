@@ -16,8 +16,11 @@ export class DrugsService {
   drugList = [];
   
   getDrugs(moa : string, generic_name : string, brand_name :string): Observable<any>{
-    const url : string = isDevMode() ? dev.apiURL : "${PROD_URL}";
+    const url : string = isDevMode() ? dev.apiURL : "$PROD_URL";
     let searchParams = new HttpParams();
+
+    console.log(process.env.PROD_URL);
+    
 
     if (moa != ""){
       searchParams = searchParams.set("moa", moa);
