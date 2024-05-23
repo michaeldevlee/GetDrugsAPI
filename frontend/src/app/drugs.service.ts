@@ -16,7 +16,7 @@ export class DrugsService {
   drugList = [];
   
   getDrugs(moa : string, generic_name : string, brand_name :string): Observable<any>{
-    const url : string = isDevMode() ? dev.apiUrl : prod.apiUrl;
+    const url : string = isDevMode() ? dev.apiUrl : "${PROD_URL}";
     let searchParams = new HttpParams();
 
     if (moa != ""){

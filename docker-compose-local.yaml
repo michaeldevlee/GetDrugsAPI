@@ -2,17 +2,24 @@ version: '3.8'
 
 services:
   # Angular Demo
-  thedrugapi-frontend:
+  frontend:
+    container_name: frontend
     build:
       context: ./frontend
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-local
+    volumes:
+      - ./frontend:/usr/src/app
     networks:
       - drugnet
     ports:
       - '80:80'
 
   # Spring Boot Demo API
-  thedrugapi-backend:
+  backend:
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /app/backend
     build:
       context: ./backend
       dockerfile: Dockerfile
