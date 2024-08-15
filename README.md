@@ -8,7 +8,6 @@ The openFDA API provides endpoints to retrieve useful drug data however, the res
 ## Technologies Used
 
 - Backend: Maven 3.9.6, Java 17, Spring Boot, RESTful API
-- Frontend: Angular 17, TypeScript, HTML, CSS
 - APIs: openFDA API
 
 ## Features
