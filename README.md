@@ -8,7 +8,6 @@ The openFDA API provides endpoints to retrieve useful drug data however, the res
 ## Technologies Used
 
 - Backend: Maven 3.9.6, Java 17, Spring Boot, RESTful API
-- Frontend: Angular 17, TypeScript, HTML, CSS
 - APIs: openFDA API
 
 ## Features
@@ -48,29 +47,13 @@ networks:
     driver: bridge
 ```
 
-
 1. Change directories to the `backend` folder and run `mvn clean install` to produce the `.jar` file to be run in the docker container
 2. Change directories back to the root of the project and run `docker compose -f docker-compose-local.yaml up -d` to create the containers
 3. Open your browser and navigate to http://localhost to use the application.
 4. Type in the appropriate search fields and press `Submit Query` to get the transformed data
 
-## What I learned
-### Angular Components
-
-- Creating Components: Learned how to generate and use components to encapsulate different parts of the UI.
-- Component Communication: Utilized Input and Output decorators for parent-child communication and event handling.
-
-### Angular Services
-
-- Dependency Injection: Gained experience with Angular's DI system to manage service lifetimes and dependencies.
-- HTTP Client: Used Angular's HttpClient module to make HTTP requests to the backend API and handle responses.
-
-### Event System
-
-- Event Binding: Implemented event binding to handle user interactions and dynamically update the UI.
-
 ## Live Site
-This demo can be viewed in production [here](https://druglookup.netlify.app). The frontend is hosted on Netlify while the backend is in a OCI compute instance docker container behind an NGINX reverse proxy. 
+This demo can be viewed in production [here](https://druglookup.netlify.app). The frontend was built with Angular hosted on Netlify while the backend is managed in a Kubernetes cluster on an OCI compute instance. 
 
 ### Examples
 ![image](https://github.com/michaeldevlee/GetDrugsAPI/assets/58196525/6221fafe-4362-4d2e-8d0b-c85e81eb057f)
